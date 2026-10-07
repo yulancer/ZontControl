@@ -1,0 +1,32 @@
+apply plugin: 'com.android.application'
+
+android {
+    namespace "tech.finbeat.zontcontrol"
+    compileSdkVersion 36
+
+    defaultConfig {
+        applicationId "tech.finbeat.zontcontrol"
+        minSdkVersion 26
+        targetSdkVersion 36
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+    // HTTP REST — HttpURLConnection, JSON — org.json из Android SDK.
+    // OkHttp — только для WebSocket (мгновенные обновления).
+    implementation 'com.squareup.okhttp3:okhttp:4.12.0'
+}

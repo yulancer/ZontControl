@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ZONT Пульт</string>
+    <string name="settings">Настройки</string>
+    <string name="refresh">Обновить</string>
+    <string name="guard">Охрана</string>
+    <string name="sensors">Датчики и статусы</string>
+    <string name="scenarios">Сценарии</string>
+    <string name="not_configured">Приложение не настроено.\nОткройте настройки, войдите в аккаунт ZONT и выберите устройство.</string>
+    <string name="open_settings">Открыть настройки</string>
+    <string name="no_sensors">Датчики не выбраны</string>
+    <string name="no_scenarios">Сценарии не выбраны</string>
+
+    <string name="account">Учётная запись ZONT</string>
+    <string name="login_hint">Логин (e-mail)</string>
+    <string name="password_hint">Пароль</string>
+    <string name="sign_in">Войти</string>
+    <string name="sign_out">Выйти</string>
+    <string name="device">Устройство</string>
+    <string name="reload_devices">Обновить список устройств</string>
+    <string name="guard_source">Охранная зона для верхней строки</string>
+    <string name="refresh_interval">Автообновление, сек (0 — выкл.)</string>
+    <string name="save">Сохранить</string>
+    <string name="password_note">Пароль не сохраняется: он используется один раз для получения токена доступа ZONT.</string>
+    <string name="paste">Вставить</string>
+    <string name="show_password">Показать пароль</string>
+    <string name="live_updates">Мгновенные обновления (WebSocket)</string>
+    <string name="live_updates_note">Изменения приходят сразу, как в приложении ZONT. Канал не описан в официальной документации; если он перестанет работать, приложение продолжит обновляться по интервалу выше.</string>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#1565C0</color>
+    <color name="primary_dark">#0D47A1</color>
+    <color name="accent">#FF8F00</color>
+    <color name="bg">#F2F4F7</color>
+    <color name="card">#FFFFFF</color>
+    <color name="text_primary">#1B1F24</color>
+    <color name="text_secondary">#5F6B7A</color>
+    <color name="guard_on">#2E7D32</color>
+    <color name="guard_off">#78909C</color>
+    <color name="guard_progress">#EF8F00</color>
+    <color name="guard_alarm">#C62828</color>
+    <color name="state_ok">#2E7D32</color>
+    <color name="state_alarm">#C62828</color>
+    <color name="state_warn">#EF8F00</color>
+    <color name="state_failure">#90A4AE</color>
+    <color name="state_active">#1565C0</color>
+</resources>
