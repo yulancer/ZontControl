@@ -222,7 +222,7 @@ public final class DeviceModel {
             value = formatNumber(o.optDouble("value")) + (unit.isEmpty() ? "" : " " + unit);
             value = value.replace(" °", "°");
         } else if (triggered != null) {
-            value = triggered ? "Сработка" : "Норма";
+            value = triggered ? "Сработал" : "Норма";
         } else {
             value = "—";
         }
@@ -313,7 +313,7 @@ public final class DeviceModel {
             case "gas": return triggered ? "Газ!" : "Норма";
             case "boiler_failure": return triggered ? "Авария" : "Норма";
             case "room_thermostat": return triggered ? "Запрос тепла" : "Нет запроса";
-            default: return triggered ? "Сработка" : "Норма";
+            default: return triggered ? "Сработал" : "Норма";
         }
     }
 

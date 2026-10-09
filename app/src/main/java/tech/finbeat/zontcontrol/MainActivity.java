@@ -371,7 +371,7 @@ public class MainActivity extends Activity implements ZontLive.Listener {
             b.setMaxLines(2);
             b.setAutoSizeTextTypeUniformWithConfiguration(12, 30, 1, TypedValue.COMPLEX_UNIT_SP);
             b.setEnabled(title != null && !commandRunning);
-            b.setOnClickListener(v -> runScenario(key, title));
+            b.setOnClickListener(v -> onScenarioClicked(key, title));
             buttons.add(b);
         }
         fillGrid(scenariosRow, buttons);
@@ -441,6 +441,14 @@ public class MainActivity extends Activity implements ZontLive.Listener {
                 main.post(() -> finishCommand(null, null, e));
             }
         });
+    }
+
+    private void onScenarioClicked(String key, String title) {
+        BigConfirm.show(this, title,
+                "Запустить?",
+                "Запустить",
+                getColor(R.color.primary),
+                () -> runScenario(key, title));
     }
 
     private void runScenario(String key, String title) {
